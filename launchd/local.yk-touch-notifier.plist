@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key><string>local.yk-touch-notifier</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>__HOME__/Applications/YK Touch Notifier.app/Contents/MacOS/yk-touch-notifier</string>
+	</array>
+	<key>RunAtLoad</key><true/>
+	<key>KeepAlive</key><true/>
+	<key>ProcessType</key><string>Interactive</string>
+	<key>StandardOutPath</key><string>__HOME__/Library/Logs/yk-touch-notifier.log</string>
+	<key>StandardErrorPath</key><string>__HOME__/Library/Logs/yk-touch-notifier.log</string>
+</dict>
+</plist>

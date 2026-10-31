@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf3ff"/>
+      <stop offset="1" stop-color="#c9dcf2"/>
+    </linearGradient>
+    <radialGradient id="gold" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffe9a3"/>
+      <stop offset="1" stop-color="#c8962e"/>
+    </radialGradient>
+    <!-- hand pointing up, 512 space -->
+    <g id="hand">
+      <rect x="155" y="45" width="60" height="300" rx="30"/>
+      <rect x="215" y="165" width="60" height="150" rx="30"/>
+      <rect x="275" y="185" width="60" height="130" rx="30"/>
+      <rect x="335" y="215" width="60" height="110" rx="30"/>
+      <path d="M100 300 Q100 255 145 255 L395 255 L395 420 Q395 470 345 470 L220 470 Q120 470 100 360 Z"/>
+    </g>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+  <!-- touch ripples + gold contact -->
+  <g fill="none" stroke="#3fa34d" stroke-linecap="round">
+    <ellipse cx="560" cy="790" rx="215" ry="62" stroke-width="18" opacity="0.35"/>
+    <ellipse cx="560" cy="790" rx="150" ry="42" stroke-width="20" opacity="0.7"/>
+  </g>
+  <ellipse cx="560" cy="790" rx="92" ry="26" fill="url(#gold)" stroke="#111" stroke-width="12"/>
+  <!-- rotated so the index finger presses down on the contact -->
+  <g transform="translate(470 470) scale(1.2) rotate(180) translate(-256 -256)">
+    <use href="#hand" stroke="#111" stroke-width="64" stroke-linejoin="round" fill="#111"/>
+    <use href="#hand" fill="#ffc97e"/>
+    <g stroke="#111" stroke-width="32" stroke-linecap="round" fill="none">
+      <path d="M155 265 V300"/>
+      <path d="M215 160 V285"/>
+      <path d="M275 185 V290"/>
+      <path d="M335 215 V285"/>
+    </g>
+  </g>
+</svg>
